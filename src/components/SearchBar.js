@@ -18,7 +18,7 @@ class SearchBar extends Component {
 			<div className="ui segment">
 				<form onSubmit={this.onFormSubmit} className="ui form">
 					<div className="field">
-						<label htmlFor="">Image Search</label>
+						<label htmlFor="">HD Image Search</label>
 						<input 
 							type="text" 
 							onChange={this.onInputChange} 
