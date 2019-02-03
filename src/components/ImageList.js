@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 
 import ImageCard from './ImageCard'
 import './ImageList.css'
@@ -13,4 +14,8 @@ const ImageList = (props) => {
 	)
 }
 
-export default ImageList
+const mapStateToProps = (state) => {
+  return {pics: state.pics}
+}
+
+export default connect(mapStateToProps)(ImageList)
