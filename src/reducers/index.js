@@ -1,8 +1,5 @@
 import { combineReducers } from 'redux'
-
-const picsReducer = () => {
-  return []
-}
+import picsReducer from './picsReducer'
 
 const selectedPicReducer = (selectedPic = null, action) => {
   if(action.type === 'PIC_SELECTED') {

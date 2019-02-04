@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux' 
+
+import {fetchPics} from '../actions'
 
 class SearchBar extends Component {
 	state = {term: ''}
@@ -10,7 +13,7 @@ class SearchBar extends Component {
 	onFormSubmit = (e) => {
 		e.preventDefault()
 
-		this.props.onSubmit(this.state.term)
+		this.props.fetchPics(this.state.term)
 	}
 
 	render() {
@@ -31,4 +34,4 @@ class SearchBar extends Component {
 	}
 }
 
-export default SearchBar
+export default connect(null, {fetchPics})(SearchBar)

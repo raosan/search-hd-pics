@@ -5,12 +5,13 @@ import ImageCard from './ImageCard'
 import './ImageList.css'
 
 const ImageList = (props) => {
-	const images = props.images.map((image) => {
-		return <ImageCard key={image.id} image={image} />
+	console.log(props.pics)
+	const pics = props.pics.map((pic) => {
+		return <ImageCard key={pic.id} image={pic} />
 	})
 
 	return (
-		<div className="image-list">{images}</div>
+		<div className="image-list">{pics}</div>
 	)
 }
 
