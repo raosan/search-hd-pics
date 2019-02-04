@@ -12,6 +12,7 @@ export const fetchPics = (term) => async dispatch => {
 }
 
 export const selectPic = (pic) => {
+	console.log(pic)
   return {
     type: 'PIC_SELECTED',
     payload: pic

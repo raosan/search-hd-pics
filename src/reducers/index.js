@@ -2,11 +2,12 @@ import { combineReducers } from 'redux'
 import picsReducer from './picsReducer'
 
 const selectedPicReducer = (selectedPic = null, action) => {
-  if(action.type === 'PIC_SELECTED') {
-    return action.payload
+  switch(action.type) {
+  	case 'PIC_SELECTED':
+  		return action.payload
+  	default:
+  		return selectedPic
   }
-
-  return selectedPic
 }
 
 export default combineReducers({
