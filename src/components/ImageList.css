@@ -9,6 +9,10 @@
   display: inline-block;
 }
 
+.image-list .item:hover {
+	cursor: pointer;
+}
+
 .image-list .item img {
 	width: 100%; height: auto;
 	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);

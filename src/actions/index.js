@@ -1,6 +1,6 @@
-export const getPics = (term) => {
+export const selectPic = (pic) => {
   return {
-    type: 'PICS-FETCH',
-    payload: term
+    type: 'PIC_SELECTED',
+    payload: pic
   }
 }
