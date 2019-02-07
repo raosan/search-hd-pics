@@ -6,10 +6,14 @@ import ImageList from './components/ImageList'
 class App extends Component {
 	render() {
 		return (
-			<div className="ui container" style={{marginTop: '10px'}}>
-				<SearchBar />
+			<div 
+				className="ui container" 
+				style={{marginTop: '10px'}}
+				data-test="component-app"
+			>
+				<SearchBar data-test="search-bar" />
 
-				<ImageList />
+				<ImageList data-test="pic-list" />
 			</div>
 		)
 	}
